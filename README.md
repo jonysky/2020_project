@@ -23,6 +23,14 @@ Web_spider包：
 
 	hour_fenge.py：用于分割时间的函数
 
+data analyse:
+
+        stop_words.py：是用于生成数字停止词的文件，输出stop_words.txt
+	
+	data_analyse.py:是用读取.csv文件并进行数据处理与数据可视化的过程（分两次输入读取文件名与数据对应月份），输出.html文件
+	
+	x月词云（Pie/Pie_Rose/Bar）图.html:分别为将数据可视化后的文件
+
 Console page:
 
 jiemian.py : 控制台页面的展示
