@@ -185,7 +185,7 @@ if __name__ == '__main__':
         time_end_jishi = time.time()  # 爬取结束后的系统时间
 
         print('数据全部爬取成功，用时:', (time_end_jishi - time_start_jishi))
-    myWindow.destroy()
+        myWindow.destroy()
 
     b1 = tkinter.Button(myWindow, text='查询', width=0, height=0, command=x)
     b1.place(x=400, y=100)

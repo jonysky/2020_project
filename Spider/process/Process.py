@@ -37,7 +37,6 @@ def geturl(url):
     #注释不显示Chrome打开爬取过程，注释可以不显示
     #browser = webdriver.Chrome()
     browser.get(url)
-    time.sleep(1)
     try:
         #此处需要填微博账号的用户名和密码，不然登不上
         browser.find_element_by_css_selector("#loginname").send_keys(
@@ -45,10 +44,8 @@ def geturl(url):
         browser.find_element_by_css_selector(".info_list.password input[node-type='password']").send_keys(
             "qwe123.")
         browser.find_element_by_css_selector(".info_list.login_btn a[node-type='submitBtn']").click()
-        time.sleep(1)
     except:
         print("no login")
-        time.sleep(1)
         try:
             t = browser.find_element_by_xpath(".//div[@class='WB_text W_f14']").text.replace('\n','').replace(' ','').replace('\r','').strip()
         except:
